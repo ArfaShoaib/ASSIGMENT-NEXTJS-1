@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  /* background: linear-gradient(to right, #0beb0b, #206b20); */
+  background-color: #E0FFFF;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.link{
+  margin: 19px;
+  color: lightseagreen;
+  font-size: larger;
+  font-weight: 500;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: inline-block;
+  justify-content: center;
+  left: 38%;
+  position: relative;
+  word-spacing: 21px;
+  letter-spacing: 2px;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.link:hover{
+  text-decoration: underline;
+  color: black;
 }
